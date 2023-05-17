@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4f23e854e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
       <div id="header">
@@ -38,18 +39,126 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit tempore, corrupti accusantium vitae, animi rerum unde neque mollitia aspernatur, quae eos facilis dolorum voluptate? Numquam blanditiis obcaecati omnis atque asperiores!</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li>UI</li>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020</span><br>Designing Web/App interfaces</li>
+                            <li><span>2020</span><br>Designing Web/App interfaces</li>
+                            <li><span>2020</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Designing Web/App interfaces</li>
+                            <li><span>2020</span><br>Designing Web/App interfaces</li>
+                            <li><span>2020</span><br>Designing Web/App interfaces</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<!-----------------about-------------->
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem rerum cupiditate aperiam qui iusto earum ex consequuntur culpa iste, expedita pariatur temporibus cum et, harum aspernatur? Sequi vel error doloremque?</p>
+                <a href="#">lears more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem rerum cupiditate aperiam qui iusto earum ex consequuntur culpa iste, expedita pariatur temporibus cum et, harum aspernatur? Sequi vel error doloremque?</p>
+                <a href="#">lears more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem rerum cupiditate aperiam qui iusto earum ex consequuntur culpa iste, expedita pariatur temporibus cum et, harum aspernatur? Sequi vel error doloremque?</p>
+                <a href="#">lears more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------portifolio-------------->
+<div class="portifolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor delectus perspiciatis quas at fugiat, nisi, blanditiis, numquam nesciunt enim sunt? Unde delectus amet magni nesciunt harum doloremque quisquam rerum?</p>
+                    <a href="https://pt-br.facebook.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor delectus perspiciatis quas at fugiat, nisi, blanditiis, numquam nesciunt enim sunt? Unde delectus amet magni nesciunt harum doloremque quisquam rerum?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor delectus perspiciatis quas at fugiat, nisi, blanditiis, numquam nesciunt enim sunt? Unde delectus amet magni nesciunt harum doloremque quisquam rerum?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------------contact-------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>leonardosantoss204@gmail.com</p> 
+            <p>038 9 97376308</p>
+            </div>
+            
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </body>
 </html>
