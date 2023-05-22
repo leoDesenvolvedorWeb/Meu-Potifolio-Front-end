@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/back.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -49,7 +49,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #ff004f;
+    background: #feac00;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,7 +67,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: #feac00;
 }
 /*-----------------about--------------*/
 #about{
@@ -109,7 +109,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #feac00;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -123,7 +123,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #feac00;
     font-size: 14px;
 }
 .tab-contents{
@@ -167,7 +167,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: #feac00;
     transform: translateY(-10px);
 }
 /*-----------------portifolio--------------*/
@@ -194,7 +194,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6),#feac00);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -215,7 +215,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #feac00;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -235,7 +235,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #feac00;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -257,7 +257,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #feac00;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -273,12 +273,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #feac00;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #feac00;
 }
 .contact-right form{
     width: 100%;
@@ -309,7 +309,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #feac00;
 }
 /*--------------css for small screens--------------*/
 nav .fa-solid{
@@ -332,7 +332,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #feac00;
         position: fixed;
         top: 0;
         right: -200px;
