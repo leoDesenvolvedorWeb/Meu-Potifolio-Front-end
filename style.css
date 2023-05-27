@@ -18,6 +18,7 @@ body{
     background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: 54px;
 }
 .container{
     padding: 10px 10%;
@@ -77,6 +78,7 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #ababab;
+    margin-bottom: 54px;
 }
 .row{
     display: flex;
@@ -139,6 +141,7 @@ nav ul li a:hover::after{
 /*-----------------services--------------*/
 #services{
     padding: 30px 0;
+    margin-bottom: 54px;
 }
 .services-list{
     display: grid;
@@ -177,6 +180,7 @@ nav ul li a:hover::after{
 /*-----------------portifolio--------------*/
 #portifolio{
     padding: 50px 0;
+    margin-bottom: 54px;
 }
 .work-list{
     display: grid;
