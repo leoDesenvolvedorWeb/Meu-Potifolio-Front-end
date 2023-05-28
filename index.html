@@ -29,12 +29,13 @@
             </div>
         </div>
     </div>
+    
     <!-----------------about-------------->
     <div class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.jpg">
+                    <img src="images/user teste.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">Sobre mim</h1>
@@ -159,12 +160,19 @@
             </div>
             
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="You Email" required>
-                    <textarea name="Message" rows="6" placeholder="You Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form class="formulario" action="enviar.php" method="port">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                  
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                  
+                    <input type="submit" value="Enviar">
                 </form>
+
             </div>
         </div>
     </div>

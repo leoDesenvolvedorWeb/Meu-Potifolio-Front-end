@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.jpg);
+    background-image: url(images/background-test.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 54px;
@@ -308,6 +308,34 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+form {
+    width: 300px;
+}
+  
+label {
+    display: block;
+    margin-top: 10px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+input[type="submit"] {
+    background-color: #feac00;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #feac00;
+}
 .copyright{
     width: 100%;
     text-align: center;
@@ -326,7 +354,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/background-phone.jpg);
+        background-image: url(images/background-phone\ teste.jpg);
     }
     .header-text{
         margin-top: 100%;
