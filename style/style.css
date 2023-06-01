@@ -138,19 +138,32 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+.active-tab ul li{
+    font-family: monospace;
+    border-right: 4px solid;
+    width: 50ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blinking 500ms steps(40) infinite normal, typing 4s steps(40) 1s both;
+}
 @keyframes typing {
     from {
       width: 0;
     }
     to {
-      width: 100%;
+        width: 39em;
+
     }
-  }
-.active-tab ul li{
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 2s steps(30, end);
-}
+} 
+  
+  @keyframes blinking {
+    50% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+} 
   
 
 /*-----------------services--------------*/
