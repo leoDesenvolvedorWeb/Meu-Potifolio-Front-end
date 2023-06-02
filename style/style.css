@@ -139,12 +139,12 @@ nav ul li a:hover::after{
     display: block;
 }
 .active-tab ul li{
-    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
     border-right: 4px solid;
     width: 50ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: blinking 4s steps(40) infinite normal, typing 0.5s steps(40) 0.5s both;
+    animation: blinking 15s steps(40) infinite normal, typing 0.5s steps(40) 0.5s both;
 }
 
 @keyframes blinking{
