@@ -144,26 +144,20 @@ nav ul li a:hover::after{
     width: 50ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: blinking 500ms steps(40) infinite normal, typing 4s steps(40) 1s both;
+    animation: blinking 4s steps(40) infinite normal, typing 0.5s steps(40) 0.5s both;
 }
-@keyframes typing {
-    from {
+
+@keyframes blinking{
+    0% {
       width: 0;
     }
-    to {
-        width: 39em;
-
-    }
-} 
-  
-  @keyframes blinking {
     50% {
-      border-color: transparent;
+      width: 100%;
     }
-    50% {
-      border-color: orange;
+    100% {
+      width: 0;
     }
-} 
+}
   
 
 /*-----------------services--------------*/
